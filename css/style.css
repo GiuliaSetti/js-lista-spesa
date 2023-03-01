@@ -10,10 +10,18 @@
 }
 
 #container{
-    max-width: 600px;
-    margin: 5rem auto;
+    position: relative;
+    height: 100%;
+    padding: 1rem;
+  
+}
 
-    border: 1px solid black;
+.lista_container{
+    max-width: 600px;
+    margin: 8rem auto;
+
+
+
     padding: 3rem 4rem;
 
     border-radius: 10px;
@@ -21,6 +29,20 @@
     background-color: #FAEDCD;
 
     box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.514);
+}
+
+main{
+
+    padding: 3rem;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.calamita{
+    position: absolute;
+
+    /* border: 1px solid black; */
+
 }
 
 /* titoli */
@@ -32,6 +54,14 @@
 
 
 /* lista della spesa */
+
+.input_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
 .input_content input{
     font-size: 20px;
     border-radius: 20px;
@@ -40,21 +70,15 @@
 }
 
 .input_content button{
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 30px;
     border: none;
     background-color: #8b8e75;
 
     color: white;
-    font-size: 20px;
     font-weight: bold;
 }
 
-.input_content{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
 
 #lista_spesa li{
 
@@ -79,3 +103,56 @@
 }
 
 
+/*  test calamite */
+
+
+.per_lista{
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    top: 30px;
+    right: 50%;
+/* 
+ */
+    background-image: url(../img/immagine2.jpg);;
+
+    background-size: cover;
+
+
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.514);
+}
+
+.due{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+
+    background-image: url(../img/immagine3.jpg);
+
+    background-size: cover;
+
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.514);
+
+
+    top: 300px;
+    left: 100px;
+}
+
+.tre{
+
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+
+    background-image: url(../img/immagine1.jpg);
+     background-size: cover;
+
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.514);
+
+    
+    top: 50px;
+    right: 80px;
+
+}

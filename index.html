@@ -20,27 +20,52 @@
     <title>Lista della Spesa</title>
 </head>
 <body class="debug">
-    <div id="container">
 
-        <!-- titoli -->
+    <main>
+
+        <div id="container">
+
+            <div class="calamita per_lista"></div>
+
+            <div class="calamita due"></div>
+
+            <div class="calamita tre"></div>
+    
+            <!-- titoli -->
+            
+            
+            <div class="lista_container">
+                
+                <h1>Lista della Spesa</h1>
+                <h2>Cose da comprare questa settimana:</h2>
+                
+                <div class="input_content">
         
-        <h1>Lista della Spesa</h1>
-        <h2>Cose da comprare questa settimana:</h2>
-        <div class="input_content">
+                    <input type="text" id="new_item" placeholder="Cosa vuoi comprare?">
+        
+                    <button id="addto_list">Inserisci</button>
 
-            <input type="text" id="new_item" placeholder="Cosa vuoi comprare?">
+                    <button id="remove_list">
+                        Cancella
+                    </button>
+        
+                </div>
+            
+            
+                <!-- lista -->
+                <ul id="lista_spesa">
+        
+                </ul>
 
-            <button id="addto_list">Inserisci</button>
+                
 
+            </div>
+
+            
+    
         </div>
-    
-    
-        <!-- lista -->
-        <ul id="lista_spesa">
 
-        </ul>
-
-    </div>
+    </main>
 
 
 

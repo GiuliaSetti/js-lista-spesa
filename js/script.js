@@ -41,6 +41,8 @@ let addItembButton = document.getElementById("addto_list");
 
 let newItem = document.getElementById("new_item");
 
+let deleteAll = document.getElementById("remove_list");
+
 
 addItembButton.addEventListener("click", function(){
 
@@ -97,4 +99,10 @@ addItembButton.addEventListener("click", function(){
 
 });
 
+
+deleteAll.addEventListener("click", function(){
+    
+    listItems.style.display = "none";
+
+});
 
