@@ -53,13 +53,12 @@ while (contatore < listaSpesa.length){
 
     listItems.append(listSingleItem);
 
+    // ° stampo l'elemento in pagina
+
     listSingleItem.innerText = listaSpesa[contatore];
 
     // console.log(listSingleItem);
 
-
-
-    
 }
 
 
