@@ -16,7 +16,7 @@
 
 // creo un'array
 
-const listaSpesa = [
+let listaSpesa = [
     "Pane",
     "Pasta",
     "Sale",
@@ -34,5 +34,32 @@ console.log(listaSpesa);
 
 let contatore = 0;
 
+// FINO A CHE il contatore non raggiunge la lunghezza dell'array 
+
+while (contatore < listaSpesa.length){
+
+    
+    contatore++;
+
+    // ° collego la ul (lista della spesa) in js
+
+    let listItems = document.getElementById("lista_spesa");
+
+    // ° crea un elemento (li)
+
+    let listSingleItem = document.createElement ("li");
+
+    // ° lo collego alla lista della spesa .append()
+
+    listItems.append(listSingleItem);
+
+    listSingleItem = listaSpesa[contatore];
+
+    console.log(listSingleItem);
+
+
+
+    
+}
 
 
