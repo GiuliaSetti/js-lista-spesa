@@ -5,6 +5,13 @@
 /* - creo un'array
    - creo una variabile contatore che possa interrompere il ciclo di while.
 
+   - chiedo all'utente cosa vuole comprare
+
+   al click del bottone:
+
+   - pusho gli elementi inseriti dall'utente nella lista.
+
+
    WHILE (FINO A CHE) il contatore non raggiunge la lunghezza dell'array -
 
         ° collego la ul (lista della spesa) in js
@@ -16,31 +23,38 @@
 
 // creo un'array
 
-let listaSpesa = [
-    "Pane",
-    "Pasta",
-    "Sale",
-    "Farina",
-    "NUTELLA!!!!",
-    "Biscotti",
-    "Rucola"
-];
+let listaSpesa = [];
 
 // test
 
 console.log(listaSpesa);
 
+//  Collego la ul (lista della spesa) in js
+
+ let listItems = document.getElementById("lista_spesa");
+
 // creo una variabile contatore che possa interrompere il ciclo di while.
 
 let contatore = 0;
 
-// FINO A CHE il contatore non raggiunge la lunghezza dell'array 
+let addItembButton = document.getElementById("addto_list");
 
-while (contatore < listaSpesa.length){
+let newItem = document.getElementById("new_item");
 
-    // ° collego la ul (lista della spesa) in js
 
-    let listItems = document.getElementById("lista_spesa");
+addItembButton.addEventListener("click", function(){
+
+
+    
+    listaSpesa.push(newItem.value);
+
+    console.log(newItem.value);
+    
+
+    // FINO A CHE il contatore non raggiunge la lunghezza dell'array 
+    while (contatore < listaSpesa.length){
+
+   
 
     // ° crea un elemento (li)
 
@@ -60,16 +74,19 @@ while (contatore < listaSpesa.length){
 
 
     
-    if (contatore % 2 == 0){
+     if (contatore % 2 == 0){
 
-        listSingleItem.classList.add("pari");
+         listSingleItem.classList.add("pari");
 
-    } else {
+     } else {
 
-        listSingleItem.classList.add("dispari");
+         listSingleItem.classList.add("dispari");
 
-    }
+     }
 
 }
+
+
+});
 
 

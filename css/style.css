@@ -32,6 +32,30 @@
 
 
 /* lista della spesa */
+.input_content input{
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.input_content button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #8b8e75;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
 #lista_spesa li{
 
     padding: 1rem;
