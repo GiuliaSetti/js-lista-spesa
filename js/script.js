@@ -38,9 +38,6 @@ let contatore = 0;
 
 while (contatore < listaSpesa.length){
 
-    
-    contatore++;
-
     // ° collego la ul (lista della spesa) in js
 
     let listItems = document.getElementById("lista_spesa");
@@ -57,6 +54,8 @@ while (contatore < listaSpesa.length){
 
     listSingleItem.innerText = listaSpesa[contatore];
 
+
+    contatore++;
     // console.log(listSingleItem);
 
 }
