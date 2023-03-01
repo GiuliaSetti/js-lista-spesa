@@ -45,10 +45,18 @@ let newItem = document.getElementById("new_item");
 addItembButton.addEventListener("click", function(){
 
 
-    
-    listaSpesa.push(newItem.value);
+    if (newItem.value == ""){
 
-    console.log(newItem.value);
+        alert("Non hai inserito niente!");
+
+    } else {
+
+        listaSpesa.push(newItem.value);
+
+    }
+
+    newItem.value = "";
+    
     
 
     // FINO A CHE il contatore non raggiunge la lunghezza dell'array 
