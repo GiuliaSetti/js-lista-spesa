@@ -13,3 +13,26 @@
         ° stampo l'elemento in pagina
 
 */
+
+// creo un'array
+
+const listaSpesa = [
+    "Pane",
+    "Pasta",
+    "Sale",
+    "Farina",
+    "NUTELLA!!!!",
+    "Biscotti",
+    "Rucola"
+];
+
+// test
+
+console.log(listaSpesa);
+
+// creo una variabile contatore che possa interrompere il ciclo di while.
+
+let contatore = 0;
+
+
+
