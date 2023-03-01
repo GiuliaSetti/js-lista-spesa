@@ -58,6 +58,18 @@ while (contatore < listaSpesa.length){
     contatore++;
     // console.log(listSingleItem);
 
+
+    
+    if (contatore % 2 == 0){
+
+        listSingleItem.classList.add("pari");
+
+    } else {
+
+        listSingleItem.classList.add("dispari");
+
+    }
+
 }
 
 

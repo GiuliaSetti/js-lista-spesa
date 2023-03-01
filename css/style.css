@@ -19,6 +19,8 @@
     border-radius: 10px;
 
     background-color: #FAEDCD;
+
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.514);
 }
 
 /* titoli */
@@ -38,6 +40,18 @@
     list-style:square;
 
     font-size: 20px;
+}
+
+
+/* righe diverso colore test */
+
+#lista_spesa .pari{
+    background-color: #E9EDC9;
+}
+
+
+#lista_spesa .dispari{
+    background-color: #FEFAE0;
 }
 
 
