@@ -53,9 +53,9 @@ while (contatore < listaSpesa.length){
 
     listItems.append(listSingleItem);
 
-    listSingleItem = listaSpesa[contatore];
+    listSingleItem.innerText = listaSpesa[contatore];
 
-    console.log(listSingleItem);
+    // console.log(listSingleItem);
 
 
 
